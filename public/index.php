@@ -1,9 +1,6 @@
 <?php
 
-
-require "../vendor/autoload.php";
-
-// use website\controllers\HomeController;
+require "../bootstrap.php";
 
 $url = substr($_SERVER['REQUEST_URI'], 1);
 $url = explode('/', $url);

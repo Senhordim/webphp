@@ -10,11 +10,5 @@
             "Website\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "Diego Collares",
-            "email": "diego.collares@gmail.com"
-        }
-    ],
     "require": {}
 }
