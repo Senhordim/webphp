@@ -1,0 +1,20 @@
+{
+    "name": "senhordim/website",
+    
+    "autoload": {
+        "files": [
+            "src/controllers/HomeController.php",
+            "src/controllers/ProductController.php"
+        ],
+        "psr-4": {
+            "Website\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Diego Collares",
+            "email": "diego.collares@gmail.com"
+        }
+    ],
+    "require": {}
+}
