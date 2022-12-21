@@ -2,8 +2,11 @@
 
 namespace website\controllers;
 
+use website\View\View;
+
 class HomeController {
     public function index() {
-        return "<h1>hello</h1>";
+        $view = new View('/home/index.php');
+        return $view->render();
     }
 }

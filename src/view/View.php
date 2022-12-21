@@ -1,6 +1,6 @@
 <?php
 
-namespace View;
+namespace website\View;
 
 class View
 {
@@ -23,7 +23,7 @@ class View
     }
 
     public function render()
-    {
+    {   
         ob_start();
         require VIEWS_PATH . $this->view;
         return ob_get_clean();

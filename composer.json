@@ -4,7 +4,9 @@
     "autoload": {
         "files": [
             "src/controllers/HomeController.php",
-            "src/controllers/ProductController.php"
+            "src/controllers/ProductController.php",
+            "src/utils/constants.php",
+            "src/View/View.php"
         ],
         "psr-4": {
             "Website\\": "src/"
