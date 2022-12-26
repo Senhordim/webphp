@@ -3,13 +3,13 @@
     
     "autoload": {
         "files": [
-            "src/controllers/HomeController.php",
-            "src/controllers/ProductController.php",
-            "src/utils/constants.php",
-            "src/View/View.php"
+            "app/controllers/PagesController.php",
+            "app/controllers/ProductController.php",
+            "app/utils/constants.php",
+            "app/helpers/View.php"
         ],
         "psr-4": {
-            "Website\\": "src/"
+            "Website\\": "app/"
         }
     },
     "require": {}

@@ -1,12 +1,15 @@
 <?php
 
-require "../bootstrap.php";
+require "./bootstrap.php";
 
 $url = substr($_SERVER['REQUEST_URI'], 1);
+
 $url = explode('/', $url);
 
-$controller = isset($url[0]) && $url[0] ? $url[0] : 'home';
+$controller = isset($url[0]) && $url[0] ? $url[0] : 'pages';
+
 $action = isset($url[1]) && $url[1] ? $url[1] : 'index';
+
 $param = isset($url[2]) && $url[2] ? $url[2] : null;
 
 if(!class_exists($controller = "website\controllers\\" . ucfirst($controller) . 'Controller')){

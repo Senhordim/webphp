@@ -1,6 +1,6 @@
 <?php
 
-namespace website\View;
+namespace website\helpers;
 
 class View
 {
@@ -19,7 +19,7 @@ class View
 
     public function __get($index)
     {
-        $this->data[$index];
+        return $this->data[$index];
     }
 
     public function render()
