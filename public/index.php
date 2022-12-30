@@ -12,12 +12,11 @@ $controller = isset($url[0]) && $url[0] ? $url[0] : 'pages';
 
 $action = isset($url[1]) && $url[1] ? $url[1] : 'index';
 
-
 $param = isset($url[2]) && $url[2] ? $url[2] : null;
 
 
 if(!class_exists($controller = "website\controllers\\" . ucfirst($controller) . 'Controller')){
-    (new View('/site/pages/404.php'))->render();
+    echo (new View('/site/pages/404.php'))->render();
     return;
 }
 
