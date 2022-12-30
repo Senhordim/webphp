@@ -4,7 +4,6 @@
     "autoload": {
         "files": [
             "app/controllers/PagesController.php",
-            "app/controllers/ProductController.php",
             "app/utils/constants.php",
             "app/helpers/View.php"
         ],

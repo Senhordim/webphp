@@ -1,6 +1,8 @@
 <?php
 
-require "./bootstrap.php";
+use website\helpers\View;
+
+require "../bootstrap.php";
 
 $url = substr($_SERVER['REQUEST_URI'], 1);
 
@@ -10,10 +12,13 @@ $controller = isset($url[0]) && $url[0] ? $url[0] : 'pages';
 
 $action = isset($url[1]) && $url[1] ? $url[1] : 'index';
 
+
 $param = isset($url[2]) && $url[2] ? $url[2] : null;
 
+
 if(!class_exists($controller = "website\controllers\\" . ucfirst($controller) . 'Controller')){
-    die("404 - Página não encontrada!");
+    (new View('/site/pages/404.php'))->render();
+    return;
 }
 
 if(!method_exists($controller, $action)){

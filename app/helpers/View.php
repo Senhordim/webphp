@@ -12,9 +12,9 @@ class View
         $this->view = $view;
     }
 
-    public function __set($index, $value)
+    public function __set($key, $value)
     {
-        $this->data[$index] = $value;
+        $this->data[$key] = $value;
     }
 
     public function __get($index)
